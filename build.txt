@@ -1,0 +1,3 @@
+displayName = Tweaks for Vanilla
+author = Jamma
+version = 0.1

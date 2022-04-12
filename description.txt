@@ -1,0 +1,18 @@
+Tweaks For Vanilla adds modifications to vanilla gameplay. All modifications can be disabled or enabled in the mods config.
+
+For now the mod adds the following modifications
+- Allowing all accessories to be worn in social slots (Configurable*)
+
+Modifications to be added
+- Remove dropping tombstones on death (Configurable)
+  - add recipes for tombstones
+
+- Set a team to autojoin on entering server (Configurable)(Multiplayer only)
+
+- Adjust respawn times
+  - when no boss is alive (Configurable)
+  - when a boss is alive (Configurable)
+
+- Nurse loves all biomes
+
+*requires reload of mod
