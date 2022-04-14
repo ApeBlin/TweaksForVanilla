@@ -3,11 +3,11 @@ using Terraria.GameContent.Personalities;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TweaksForVanilla
+namespace TweaksForVanilla.Tweaks
 {
   public class Nurse : GlobalNPC
-  {
-    static int[] townNPCs = { 22, 17, 38, 207, 369, 633, 20, 227, 588, 19, 550, 353, 107, 228, 54, 124, 208, 108, 441, 160, 229, 178, 209, 142, 663 };
+  { 
+    static readonly int[] townNPCs = { 22, 17, 38, 207, 369, 633, 20, 227, 588, 19, 550, 353, 107, 228, 54, 124, 208, 108, 441, 160, 229, 178, 209, 142, 663 };
     public override void SetDefaults(NPC npc)
     {
       if(npc.type == NPCID.Nurse && Config.Instance.NurseHappiness)

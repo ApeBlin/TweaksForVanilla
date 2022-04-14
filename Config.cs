@@ -1,20 +1,8 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.Serialization;
+﻿using System.ComponentModel;
 using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
-using Terraria.ModLoader.Config.UI;
-using Terraria.UI;
+
 
 namespace TweaksForVanilla
 {
@@ -24,11 +12,17 @@ namespace TweaksForVanilla
 
     public static Config Instance;
 
+    // Accessories
+    [Header("[i:3097] Accessories")]
+
     [DefaultValue(true)]
     [Label("Accessories social slottable.")]
     [Tooltip("Allows all accessories to be equipped in social slots. Requires a reload.")]
     [ReloadRequired]
     public bool SocialSlotAccessories { get; set; }
+
+    // NPCs
+    [Header("[i:267] NPCs")]
 
     [DefaultValue(true)]
     [Label("Make nurse always happy.")]
@@ -36,19 +30,18 @@ namespace TweaksForVanilla
     [ReloadRequired]
     public bool NurseHappiness { get; set; }
 
+    // Tombstones
+    [Header("[i:321] Tombstones")]
+
     [DefaultValue(true)]
-    [Label("No tombstones.")]
+    [Label("No more tombstones.")]
     [Tooltip("Disables the dropping of a tombstone on death.")]
     public bool DontDropTombstones { get; set; }
 
     [DefaultValue(true)]
-    [Label("Add tombstone recipes.")]
-    [Tooltip("Adds recipes for tombstones.")]
+    [Label("Add recipes for tombstones.")]
+    [Tooltip("Useful if you disable the drops. (For graveyard biome)")]
     public bool AddTombstonesRecipes { get; set; }
-
-    //[DefaultValue(true)]
-    //[Label("")]
-    //[Tooltip("")]
 
     public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref string message)
     {

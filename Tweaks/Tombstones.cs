@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using Terraria.Localization;
 using Terraria.DataStructures;
 
-namespace TweaksForVanilla
+namespace TweaksForVanilla.Tweaks
 {
   public class Tombstones : ModPlayer
   {
