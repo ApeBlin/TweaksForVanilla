@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace TweaksForVanilla
+namespace TweaksForVanilla.Tweaks
 {
   public class AccessorySocial : GlobalItem
   {
