@@ -3,6 +3,10 @@ All modifications can be configured in-game in the Mod Config menu.
 
 Features:
 - Allowing all accessories to be worn in social slots
-- Makes nurse love all biomes and other town NPCs
 - Remove dropping tombstones on death
- - add recipes for tombstones
+- add recipes for tombstones
+!!!SHOULDNT THIS BE REMOVED IF NURSE PRICE CONFIGS ARE WORKING PROPERLY!!!
+- Makes nurse love all biomes and other town NPCs
+- Through the mod config you can set the following modifications for nurse:
+  - Base price per 1 health (Terraria default = 1 copper, Mod default = 1 copper)
+  - Max healing price (Mod default = 10 gold)

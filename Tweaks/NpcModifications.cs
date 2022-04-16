@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace TweaksForVanilla.Tweaks
 {
-  public class Nurse : GlobalNPC
+  public class NpcModifications : GlobalNPC
   { 
     static readonly int[] townNPCs = { 22, 17, 38, 207, 369, 633, 20, 227, 588, 19, 550, 353, 107, 228, 54, 124, 208, 108, 441, 160, 229, 178, 209, 142, 663 };
     public override void SetDefaults(NPC npc)

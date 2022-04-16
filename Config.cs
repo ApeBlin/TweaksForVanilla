@@ -14,7 +14,6 @@ namespace TweaksForVanilla
 
     // Accessories
     [Header("[i:3097] Accessories")]
-
     [DefaultValue(true)]
     [Label("Accessories social slottable.")]
     [Tooltip("Allows all accessories to be equipped in social slots. Requires a reload.")]
@@ -23,21 +22,22 @@ namespace TweaksForVanilla
 
     // NPCs
     [Header("[i:267] NPCs")]
-
     [DefaultValue(true)]
     [Label("Make nurse always happy.")]
     [Tooltip("Sets nurse to love all npcs and biomes. Requires a reload.")]
     [ReloadRequired]
     public bool NurseHappiness { get; set; }
+    [DefaultValue(true)]
+    [Label("Use modded variables for nurse pricing.")]
+    [Tooltip("Modded variables can be changed below NOT DONE YET")]
+    public bool ModdedNursePricing { get; set; }
 
     // Tombstones
     [Header("[i:321] Tombstones")]
-
     [DefaultValue(true)]
     [Label("No more tombstones.")]
     [Tooltip("Disables the dropping of a tombstone on death.")]
     public bool DontDropTombstones { get; set; }
-
     [DefaultValue(true)]
     [Label("Add recipes for tombstones.")]
     [Tooltip("Useful if you disable the drops. (For graveyard biome)")]
