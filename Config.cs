@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
 
@@ -20,28 +21,44 @@ namespace TweaksForVanilla
     [ReloadRequired]
     public bool SocialSlotAccessories { get; set; }
 
+    // Tombstones
+    [Header("[i:321] Tombstones")]
+
+    [DefaultValue(true)]
+    [Label("No more tombstones.")]
+    [Tooltip("Disables the dropping of a tombstone on death.")]
+    public bool DontDropTombstones { get; set; }
+
+    [DefaultValue(true)]
+    [Label("Add recipes for tombstones.")]
+    [Tooltip("Useful if you disable the drops. (For graveyard biome)")]
+    public bool AddTombstonesRecipes { get; set; }
+
     // NPCs
     [Header("[i:267] NPCs")]
+
     [DefaultValue(true)]
     [Label("Make nurse always happy.")]
     [Tooltip("Sets nurse to love all npcs and biomes. Requires a reload.")]
     [ReloadRequired]
     public bool NurseHappiness { get; set; }
+
+    [DefaultValue(false)]
+    [Label("Allow happiness to adjust nurse pricing")]
+    [Tooltip("")]
+    public bool HappinessChangesPrice { get; set; }
+
     [DefaultValue(true)]
     [Label("Use modded variables for nurse pricing.")]
     [Tooltip("Modded variables can be changed below NOT DONE YET")]
     public bool ModdedNursePricing { get; set; }
 
-    // Tombstones
-    [Header("[i:321] Tombstones")]
-    [DefaultValue(true)]
-    [Label("No more tombstones.")]
-    [Tooltip("Disables the dropping of a tombstone on death.")]
-    public bool DontDropTombstones { get; set; }
-    [DefaultValue(true)]
-    [Label("Add recipes for tombstones.")]
-    [Tooltip("Useful if you disable the drops. (For graveyard biome)")]
-    public bool AddTombstonesRecipes { get; set; }
+    // Nurse price modifiers
+    [Header("Nurses modifiers")]
+
+    [Label("Base price per health point")]
+    [Tooltip("Vanilla default is ")]
+    public int BasePricePerHealthPoint  { get; set; }
 
     public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref string message)
     {
